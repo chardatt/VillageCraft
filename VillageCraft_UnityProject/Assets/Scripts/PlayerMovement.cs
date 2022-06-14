@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform render;
     private CharacterController cc;
     private Vector3 velocity;
+    public GameObject playerCam;
 
 
     private void Start() {
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
         #region MOVING
         //Déplacement
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Vector3 move = playerCam.transform.forward * Input.GetAxis("Vertical") + playerCam.transform.right * Input.GetAxis("Horizontal");
         cc.Move(move * Time.deltaTime * playerSpeed);
         if (move != Vector3.zero) 
         {
@@ -135,4 +135,14 @@ public class PlayerMovement : MonoBehaviour
         cc.center = Vector3.Lerp(cc.center, new Vector3(0, center, 0), crouchSpeed);
     }
     #endregion
+
+        #region ROLL
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            //dash
+            
+            //timer
+        }
+
+        #endregion
 }
