@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
         #region SPRINT
         //Sprint
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.JoystickButton8)) 
+        if (Input.GetButtonDown("Run"))
         {
             isRunning = !isRunning;
         }
@@ -97,11 +97,11 @@ public class PlayerMovement : MonoBehaviour
 
         #region CROUCH
         
-        if (Input.GetKeyDown(KeyCode.C) && !isRunning) 
+        if (Input.GetButtonDown("Crouch") && !isRunning) 
         {
             isConstantlyCrouching = !isConstantlyCrouching;
         }
-        if (Input.GetKey(KeyCode.LeftControl) && !isRunning) 
+        if (Input.GetButton("Constantly Crouch") && !isRunning) 
         {
             isCrouching = true;
         }
@@ -137,12 +137,12 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
         #region ROLL
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        /*if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             //dash
             
             //timer
-        }
+        }*/
 
         #endregion
 }
