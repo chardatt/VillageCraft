@@ -1,4 +1,4 @@
-using System;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,21 +9,22 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]private float playerSpeed;
     [SerializeField]private float walkSpeed;
     [SerializeField]private float runningSpeed;
-    [SerializeField][Range(0f, 1f)]private float crouchSpeed;
+    [SerializeField]private float crouchingSpeed;
 
     [Header("Jump")]
-    [SerializeField]private float gravity;
     [SerializeField]private float jumpHeight;
+    [SerializeField]private float gravity;
 
     [Header("Crouch")]
     [SerializeField]private float crouchHeight;
     [SerializeField]private float standHeight;
+    [SerializeField][Range(0f, 1f)]private float crouchSpeed;
 
     [Header("Check States")]
     [SerializeField]private bool isRunning;
     [SerializeField]private bool isGrounded;
     [SerializeField]private bool isCrouching;
-
+    [SerializeField]private bool isConstantlyCrouching;
 
     private Transform render;
     private CharacterController cc;
@@ -41,63 +42,97 @@ public class PlayerMovement : MonoBehaviour
         //Déplacement
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         cc.Move(move * Time.deltaTime * playerSpeed);
-        if (move != Vector3.zero) {
+        if (move != Vector3.zero) 
+        {
             gameObject.transform.forward = move;
-        }
+        }        
         #endregion
 
         #region SPRINT
         //Sprint
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.JoystickButton8)) {
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.JoystickButton8)) 
+        {
             isRunning = !isRunning;
         }
         
-        if (isRunning) {
+        if (isRunning) 
+        {
             playerSpeed = runningSpeed;
         }
-        else playerSpeed = walkSpeed;
+        else if (!isRunning)
+        {
+            playerSpeed = walkSpeed;
+        }
         #endregion
 
         #region JUMP
         //Jump
-        if (Input.GetButtonDown("Jump") && isGrounded) {
+        if (Input.GetButtonDown("Jump") && isGrounded) 
+        {
             velocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
         //Check si le joueur touche le sol ou pas
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 0.1f))
-            {
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.green);
-                isGrounded = true;
-            }
-            else isGrounded = false;
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hit.distance, Color.red);
+            isGrounded = true;
+        }
+        else 
+        {
+            isGrounded = false;
+        } 
 
-        if (isGrounded && velocity.y < 0) {
+        if (isGrounded && velocity.y < 0) 
+        {
             velocity.y = 0f;
         }
         #endregion
 
-        #region  GRAVITY
+        #region GRAVITY
         //Gravity
         velocity.y += gravity * Time.deltaTime;
         cc.Move(velocity * Time.deltaTime);
         #endregion
 
-        isCrouching = Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.LeftControl);
-    }
+        #region CROUCH
+        
+        if (Input.GetKeyDown(KeyCode.C) && !isRunning) 
+        {
+            isConstantlyCrouching = !isConstantlyCrouching;
+        }
+        if (Input.GetKey(KeyCode.LeftControl) && !isRunning) 
+        {
+            isCrouching = true;
+        }
+        else 
+        {
+            isCrouching = false;
+        }
+        
+        //Empêcher le collider de se remettre en position initial s'il reste sous un plafond trop bas
+        RaycastHit hitTop;
+        if (Physics.Raycast(transform.position + Vector3.up, transform.TransformDirection(Vector3.up), out hitTop, 1f))
+        {
+            Debug.DrawRay(transform.position + Vector3.up, transform.TransformDirection(Vector3.up) * hitTop.distance, Color.yellow);
+            Debug.Log("je ne peux pas me relever");
+            isCrouching = true;
+        }
+        
+        //choisis la bonne hauteur de collider en fonction de si il est crouch ou non
+        var desiredHeight = isCrouching || isConstantlyCrouching ? crouchHeight : standHeight;
 
-    private void FixedUpdate() {
-        var desiredHeight = isCrouching ? crouchHeight : standHeight;
-
-        if (cc.height != desiredHeight){
+        if (cc.height != desiredHeight)
+        {
             AdjustHeight(desiredHeight);
         }
     }
 
-    private void AdjustHeight(float height){
+    private void AdjustHeight(float height)
+    {
         float center = height / 2;
-
         cc.height = Mathf.Lerp(cc.height, height, crouchSpeed);
         cc.center = Vector3.Lerp(cc.center, new Vector3(0, center, 0), crouchSpeed);
     }
+    #endregion
 }

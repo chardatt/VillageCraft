@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8684619947889324360}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,14 +132,16 @@ MonoBehaviour:
   playerSpeed: 0
   walkSpeed: 10
   runningSpeed: 15
-  crouchSpeed: 0.3
+  crouchingSpeed: 7
   gravity: -50
   jumpHeight: 2
   crouchHeight: 1
   standHeight: 2
+  crouchSpeed: 0.3
   isRunning: 0
   isGrounded: 0
   isCrouching: 0
+  isConstantlyCrouching: 0
 --- !u!143 &8684619947889324360
 CharacterController:
   m_ObjectHideFlags: 0
