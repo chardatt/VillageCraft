@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
     public GameObject playerCam;
 
-
+    
     private void Start() {
         render = GetComponentInChildren<Transform>();
         cc = GetComponent<CharacterController>();
@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         #region MOVING
         //Déplacement
         Vector3 move = playerCam.transform.forward * Input.GetAxis("Vertical") + playerCam.transform.right * Input.GetAxis("Horizontal");
+        move.y = 0;
         cc.Move(move * Time.deltaTime * playerSpeed);
         if (move != Vector3.zero) 
         {
@@ -141,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //dash
             
-            //timer
+            //cooldown
         }*/
 
         #endregion
