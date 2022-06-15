@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class inventorySystem : MonoBehaviour
+public class InventorySystem : MonoBehaviour
 {
     public GameObject inventory;
     bool activeInventory = false;
