@@ -249,15 +249,22 @@ MonoBehaviour:
   walkSpeed: 10
   runningSpeed: 15
   crouchingSpeed: 7
+  slidingSpeed: 15
+  rollSpeed: 20
   jumpHeight: 2
   gravity: -50
   crouchHeight: 1
   standHeight: 2
   crouchSpeed: 0.3
-  isRunning: 0
+  rollTime: 0.5
+  isMoving: 1
   isGrounded: 0
+  isRunning: 0
   isCrouching: 0
   isConstantlyCrouching: 0
+  isSliding: 0
+  isRolling: 0
+  playerCam: {fileID: 0}
 --- !u!143 &8684619947889324360
 CharacterController:
   m_ObjectHideFlags: 0
