@@ -19,6 +19,9 @@ public class PlayerCamera : MonoBehaviour
         zoomLevelBot = cinemachineFreeLook.m_Orbits[0].m_Radius;
         zoomLevelMid = cinemachineFreeLook.m_Orbits[1].m_Radius;
         zoomLevelTop = cinemachineFreeLook.m_Orbits[2].m_Radius;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
