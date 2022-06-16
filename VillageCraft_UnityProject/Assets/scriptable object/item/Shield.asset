@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490c33612913ff04db58a34054871967, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 3756489266982866846, guid: b01909429247bfe4989c9fd4dbfdf5b5, type: 3}
   type: 1
   description: defense yourself
   attackBonus: 0

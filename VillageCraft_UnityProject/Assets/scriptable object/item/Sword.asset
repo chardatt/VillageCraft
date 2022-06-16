@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490c33612913ff04db58a34054871967, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 1456142683230738111, guid: aea9432a76ff1c2468e496d38af6541e, type: 3}
   type: 1
   description: 'slash a monster with it '
   attackBonus: 10

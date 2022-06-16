@@ -56,15 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Item scripts\Item.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\PlayerCamera.cs" />
-    <Compile Include="Assets\Scripts\Inventory scripts\InventorySystem.cs" />
-    <Compile Include="Assets\Scripts\Item scripts\ItemObject.cs" />
     <Compile Include="Assets\Scripts\Item scripts\DefaultObject.cs" />
     <Compile Include="Assets\Scripts\Item scripts\EquipmentObject.cs" />
     <Compile Include="Assets\Scripts\Inventory scripts\InventoryObject.cs" />
+    <Compile Include="Assets\Scripts\PlayerCamera.cs" />
+    <Compile Include="Assets\Scripts\Inventory scripts\InventorySystem.cs" />
+    <Compile Include="Assets\Scripts\Item scripts\ItemObject.cs" />
     <Compile Include="Assets\Scripts\Inventory scripts\PlayerInventory.cs" />
-    <Compile Include="Assets\Scripts\Item scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\Inventory scripts\DisplayInventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
