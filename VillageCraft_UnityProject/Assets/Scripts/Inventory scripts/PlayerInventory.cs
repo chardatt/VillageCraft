@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
+    public GameObject indicationUI;
     public InventoryObject inventory;
     public List<Item> itemList = new List<Item>();
     bool listUpdate = false;
@@ -24,11 +25,17 @@ public class PlayerInventory : MonoBehaviour
                     }
                 }
             }
+            indicationUI.SetActive(true);
+            indicationUI.transform.position = item.gameObject.transform.position + Vector3.up;
 
             if (Input.GetButtonDown("GetItem"))
             {
                 EnterItemInInventory(item);
             }
+        }
+        else
+        {
+            indicationUI.SetActive(false);
         }
     }
 
