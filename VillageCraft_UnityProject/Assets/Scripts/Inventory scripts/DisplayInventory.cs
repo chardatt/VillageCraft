@@ -23,6 +23,7 @@ public class DisplayInventory : MonoBehaviour
     {
         UpdateDisplay();
     }
+
     public void UpdateDisplay()
     {
         for(int i = 0; i < inventory.Container.Count; i++)
@@ -40,6 +41,7 @@ public class DisplayInventory : MonoBehaviour
             }
         }
     }
+
     public void CreateDisplay()
     {
         for (int i = 0; i < inventory.Container.Count; i++)
@@ -48,9 +50,9 @@ public class DisplayInventory : MonoBehaviour
             obj.GetComponent<RectTransform>().localPosition = GetPosition(i);
             obj.GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].amount.ToString("n0");
             itemDisplayed.Add(inventory.Container[i], obj);
-
         }
     }
+
     public Vector3 GetPosition(int i)
     {
         return new Vector3(X_START + (X_SPACE_BETWEEN_ITEM *(i % NUMBER_COLUMN)), Y_START + (-Y_SPACE_BETWEEN_ITEM * (i/NUMBER_COLUMN)), 0f);
