@@ -131,7 +131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1899720355
 Transform:
   m_ObjectHideFlags: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181b0421199e4dc4ea40884f343a5721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indicationUI: {fileID: 0}
   inventory: {fileID: 11400000, guid: 882678fe1bb00694587b7afcb09b69a0, type: 2}
   itemList: []
 --- !u!135 &1899720356
@@ -320,7 +321,8 @@ MonoBehaviour:
   crouchSpeed: 0.3
   rollCD: 0
   rollTime: 0.5
-  isMoving: 1
+  isIdle: 0
+  isMoving: 0
   isGrounded: 0
   isRunning: 0
   isCrouching: 0
