@@ -52,7 +52,6 @@ public class PlayerInventory : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("EnterTrigger " + other.gameObject.name);
         if (other.GetComponent<Item>())
         {
             var item = other.GetComponent<Item>();
