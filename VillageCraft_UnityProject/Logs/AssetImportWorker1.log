@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.2/staging' branch; Version is '2021.2.13f1 (90b6766da538) revision 9483894'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'fr' Physical Memory: 16292 MB
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'fr' Physical Memory: 16228 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-Z:\Unity Hub\2021.2.13f1\Editor\Unity.exe
+D:\Unity\2021.2.13f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-G:/Unity/Github Repo/VillageCraft/VillageCraft_UnityProject
+D:/PROJETS GITHUB/VillageCraft/VillageCraft_UnityProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59629
-Successfully changed project path to: G:/Unity/Github Repo/VillageCraft/VillageCraft_UnityProject
-G:/Unity/Github Repo/VillageCraft/VillageCraft_UnityProject
+63577
+Successfully changed project path to: D:/PROJETS GITHUB/VillageCraft/VillageCraft_UnityProject
+D:/PROJETS GITHUB/VillageCraft/VillageCraft_UnityProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,105 +47,105 @@ G:/Unity/Github Repo/VillageCraft/VillageCraft_UnityProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 105.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 132.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.13f1 (90b6766da538)
-[Subsystems] Discovering subsystems at path Z:/Unity Hub/2021.2.13f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path G:/Unity/Github Repo/VillageCraft/VillageCraft_UnityProject/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2021.2.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/PROJETS GITHUB/VillageCraft/VillageCraft_UnityProject/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
     Vendor:   NVIDIA
-    VRAM:     6052 MB
-    Driver:   30.0.15.1259
+    VRAM:     5991 MB
+    Driver:   30.0.15.1295
 Initialize mono
-Mono path[0] = 'Z:/Unity Hub/2021.2.13f1/Editor/Data/Managed'
-Mono path[1] = 'Z:/Unity Hub/2021.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'Z:/Unity Hub/2021.2.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Mono path[0] = 'D:/Unity/2021.2.13f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.2.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: Z:/Unity Hub/2021.2.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003408 seconds.
+Register platform support module: D:/Unity/2021.2.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002601 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 111.79 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 111.20 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.641 seconds
+- Completed reload, in  0.790 seconds
 Domain Reload Profiling:
-	ReloadAssembly (641ms)
-		BeginReloadAssembly (66ms)
+	ReloadAssembly (791ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (474ms)
-			LoadAssemblies (65ms)
+		EndReloadAssembly (542ms)
+			LoadAssemblies (120ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (102ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (299ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (334ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (112ms)
+				RefreshPlugins (111ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (136ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007208 seconds.
+Registered in 0.013159 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image G:\Unity\Github Repo\VillageCraft\VillageCraft_UnityProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image G:\Unity\Github Repo\VillageCraft\VillageCraft_UnityProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\PROJETS GITHUB\VillageCraft\VillageCraft_UnityProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\PROJETS GITHUB\VillageCraft\VillageCraft_UnityProject\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 124.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 123.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.904 seconds
+- Completed reload, in  2.287 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1905ms)
-		BeginReloadAssembly (102ms)
+	ReloadAssembly (2288ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1663ms)
-			LoadAssemblies (102ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (2034ms)
+			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (379ms)
+			SetupTypeCache (386ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (1075ms)
+			RebuildScriptCaches (132ms)
+			SetupLoadedEditorAssemblies (1322ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (125ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (737ms)
-				ProcessInitializeOnLoadMethodAttributes (77ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (124ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (975ms)
+				ProcessInitializeOnLoadMethodAttributes (91ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5281 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 47 unused Assets / (415.6 KB). Loaded Objects now: 5739.
-Memory consumption went from 209.4 MB to 209.0 MB.
-Total: 4.047700 ms (FindLiveObjects: 0.535800 ms CreateObjectMapping: 0.149800 ms MarkObjects: 3.206600 ms  DeleteObjects: 0.154200 ms)
+Unloading 5477 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (1.9 MB). Loaded Objects now: 5956.
+Memory consumption went from 246.7 MB to 244.8 MB.
+Total: 5.516500 ms (FindLiveObjects: 0.617500 ms CreateObjectMapping: 0.492100 ms MarkObjects: 4.004100 ms  DeleteObjects: 0.401800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,23 +159,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 20863.410122 seconds.
-  path: Assets/UI/Fichier 2Descritpion.png
-  artifactKey: Guid(ff16c3bc8155655489fac5782a9c2de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Fichier 2Descritpion.png using Guid(ff16c3bc8155655489fac5782a9c2de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c73a4a1c5f198479ef38497e17c721e') in 0.082838 seconds 
+  Time since last request: 10432.593638 seconds.
+  path: Assets/Terrain/TerrainData_2e4fede7-97d8-41de-b3ce-4c578ac5ed53.asset
+  artifactKey: Guid(b9c70203c68baa6448d3e778805f260c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/TerrainData_2e4fede7-97d8-41de-b3ce-4c578ac5ed53.asset using Guid(b9c70203c68baa6448d3e778805f260c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6165f64d93c73b6a55fbc975c5a43dc') in 0.487505 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/UI/Fichier 7FondArmeInGame.png
-  artifactKey: Guid(32b0271e02311ba4cbc7808228883b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Fichier 7FondArmeInGame.png using Guid(32b0271e02311ba4cbc7808228883b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14774ce5ff9c72e32b2c2036f7480f7') in 0.014021 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/UI/Fichier 3Character.png
-  artifactKey: Guid(914ffdac230ce2c48910a617b41dfe8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Fichier 3Character.png using Guid(914ffdac230ce2c48910a617b41dfe8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69440ba8abb6e6aea45e65533918c6b') in 0.010766 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 0.000040 seconds.
+  path: Assets/Terrain/Terrain_0_0_9595c48e-3cc5-4f5d-8eb3-8d1f1ea6b039.asset
+  artifactKey: Guid(df5260e52b27a3b49b8fd896e68cc396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Terrain_0_0_9595c48e-3cc5-4f5d-8eb3-8d1f1ea6b039.asset using Guid(df5260e52b27a3b49b8fd896e68cc396) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Pine01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ -> (artifact id: '8cc6f928805c02a1fd9972f598875a72') in 0.855170 seconds 
