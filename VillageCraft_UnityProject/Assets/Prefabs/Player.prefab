@@ -321,7 +321,6 @@ MonoBehaviour:
   crouchSpeed: 0.3
   rollCD: 0
   rollTime: 0.5
-  isIdle: 0
   isMoving: 0
   isGrounded: 0
   isRunning: 0

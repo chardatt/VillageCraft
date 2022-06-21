@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\Item scripts\ItemObject.cs" />
      <Compile Include="Assets\Scripts\Inventory scripts\PlayerInventory.cs" />
      <Compile Include="Assets\Scripts\BillboardUI.cs" />
+     <None Include="Assets\TerrainSampleAssets\ThirdPartyNotices.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -68,6 +69,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TerrainSampleAssets\ShaderGraphs\CustomFunctions\CustomLighting.hlsl" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>D:\Unity\2021.2.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -1029,6 +1031,9 @@
     <Reference Include="Unity.ShaderGraph.Editor">
         <HintPath>D:\PROJETS GITHUB\VillageCraft\VillageCraft_UnityProject\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TerrainTools">
+        <HintPath>D:\PROJETS GITHUB\VillageCraft\VillageCraft_UnityProject\Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
+    </Reference>
     <Reference Include="Cinemachine">
         <HintPath>D:\PROJETS GITHUB\VillageCraft\VillageCraft_UnityProject\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
@@ -1046,6 +1051,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
         <HintPath>D:\PROJETS GITHUB\VillageCraft\VillageCraft_UnityProject\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+        <HintPath>D:\PROJETS GITHUB\VillageCraft\VillageCraft_UnityProject\Library\ScriptAssemblies\Unity.TerrainTools.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
         <HintPath>D:\PROJETS GITHUB\VillageCraft\VillageCraft_UnityProject\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
